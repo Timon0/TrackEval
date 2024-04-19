@@ -159,7 +159,7 @@ class MotChallenge2DBox(_BaseDataset):
             with open(seqmap_file) as fp:
                 reader = csv.reader(fp)
                 for i, row in enumerate(reader):
-                    if i == 0 or row[0] == '':
+                    if row[0] == '':
                         continue
                     seq = row[0]
                     seq_list.append(seq)
